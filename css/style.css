@@ -238,8 +238,11 @@ ol {
 	padding: 18px 0;
 }
 
-.header-social {
+.header-subscribe {
 	float: left;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .header-social a {
@@ -250,8 +253,6 @@ ol {
 .user-panel {
 	float: right;
 	color: #fff;
-	font-size: 14px;
-	font-weight: 600;
 }
 
 .user-panel a {
