@@ -241,8 +241,15 @@ ol {
 .header-subscribe {
 	float: left;
 	color: #fff;
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: lowercase
+}
+.header-subscribe a{
+	color: #6d6d6d;
+	font-family: 'Dosis',sans-serif;
+	font-size: 1.3rem;
+	font-weight: 600
 }
 
 .header-social a {
@@ -1508,6 +1515,17 @@ ol {
 		text-align: center;
 		font-size: 24px;
 		margin-left: 15px;
+	}
+	.header-subscribe{
+		font-size: 13px;
+		font-weight: 600
+	}
+	.header-subscribe a{
+		font-size: 29px;
+		font-weight: 400
+	}
+	.user-panel  {
+		margin-top: 0.5rem;
 	}
 	.header-search {
 		margin-top: 0;
