@@ -1527,6 +1527,9 @@ ol {
 	.user-panel  {
 		margin-top: 0.5rem;
 	}
+	.main-menu li:last-child{
+		display: none;
+	}
 	.header-search {
 		margin-top: 0;
 	}
