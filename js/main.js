@@ -17,6 +17,13 @@ $(window).on('load', function() {
 	$("#preloder").delay(400).fadeOut("slow");
 
 
+	/*----------------
+		loading posts
+	-------------------*/
+	$.get("", function(data, status){
+		alert("Data: " + data + "\nStatus: " + status);
+	  });
+
 	/*------------------
 		Gallery item
 	--------------------*/
