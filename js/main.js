@@ -22,7 +22,10 @@ $(window).on('load', function() {
 	-------------------*/
 
 $.ajax('https://foodiebells-83042.firebaseapp.com/recipes/', {
-    	type: 'GET',  // http method
+		type: 'GET',  // http method
+		headers: {
+			"Access-Control-Allow-Origin":"https//:foodiebells.com"
+		  },
     	success: function (data, status, xhr) {
         	$('.myrecipes').append(data);
     	},
