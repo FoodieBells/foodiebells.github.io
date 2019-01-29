@@ -20,9 +20,16 @@ $(window).on('load', function() {
 	/*----------------
 		loading posts
 	-------------------*/
-	$.get("", function(data, status){
-		alert("Data: " + data + "\nStatus: " + status);
-	  });
+
+$.ajax('https://foodiebells-83042.firebaseapp.com/recipes/', {
+    	type: 'GET',  // http method
+    	success: function (data, status, xhr) {
+        	$('.myrecipes').append(data);
+    	},
+    	error: function (jqXhr, textStatus, errorMessage) {
+            $('.myrecipes').append('Error' + errorMessage);
+    	}
+	});
 
 	/*------------------
 		Gallery item
