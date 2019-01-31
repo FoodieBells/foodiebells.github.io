@@ -273,6 +273,13 @@ ol {
 
 .site-logo {
 	display: inline-block;
+	width: 322px;
+	height: 64px;
+}
+.footer-logo{
+	display: inline-block;
+	width: 322px;
+	height: 64px;
 }
 
 .nav-switch {
