@@ -575,10 +575,38 @@ ol {
   Instagram Section
 ---------------------*/
 .instagram-feed {
-	background-color: #f4f7fb;
+	/*background-color: #f4f7fb;
 	padding-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 30px;*/
 	
+}
+
+/*------------------
+  Blog Section
+---------------------*/
+.blog-section .container {
+	padding-bottom: 30px;
+	border-bottom: 2px solid #f8f8f8
+}
+.blog-post {
+	margin-bottom: 30px
+}
+.blog-post a{
+	color: #ff2a6b;
+}
+.blog-post h4{
+	margin-top: -10px
+}
+.blog-post a:hover{
+	text-decoration: underline
+}
+.blog-post-img {
+	height: 350px;
+	width: 600px
+}
+.blog-post-details {
+	padding-bottom: 30px;
+	border-bottom: 2px solid #f8f8f8
 }
 
 /*------------------
@@ -630,6 +658,12 @@ ol {
 .recipe .rating i {
 	font-size: 11px;
 }
+
+/*----------------------
+  Bottom widget Section
+------------------------*/
+
+
 
 /*----------------------
   Bottom widget Section
