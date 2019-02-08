@@ -1223,11 +1223,11 @@ ol {
 
 .recipe-info-list {
 	list-style: none;
-	padding-left: 17px;
+	padding-left: 15px;
 }
 
 .recipe-info-list li {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .recipe-info-list h2 {
@@ -1281,7 +1281,7 @@ ol {
 
 .recipe-filter-warp .filter-form-warp {
 	padding: 55px;
-	padding-right: 30px;
+	padding-right: 20px;
 }
 
 .recipe-filter-warp .filter-form-warp h2 {
@@ -1291,7 +1291,7 @@ ol {
 
 .recipe-filter-warp .filter-form .check-warp {
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 }
 
 .recipe-filter-warp .filter-form .check-warp:last-child {
