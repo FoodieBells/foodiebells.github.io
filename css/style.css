@@ -79,6 +79,9 @@ ol {
 	Helper CSS
 -----------------------*/
 
+.current-page a ::after{
+	color: #ff2a6b;
+}
 .section-title {
 	margin-bottom: 48px;
 	position: relative;
