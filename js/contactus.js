@@ -7,19 +7,17 @@
             e.preventDefault();
             $.ajax('https://foodiebells-83042.firebaseapp.com/contact/',{
                 type:'POST',
-                data: JSON.stringify({
+                data: {
                     "name":$('#name').val(),
                     "from":$('#from').val(),
                     "subject":$('#subject').val(),
                     "message":$('#message').val() 
-                    }),
-                contentType: "application/json",
-                //dataType: "json",
+                    },
                 success: function(data){
                     $('#name').val("");
-                    $('#from').val(""),
-                    $('#to').val(""),
-                    $('#message').val(""),
+                    $('#from').val("");
+                    $('#to').val("");
+                    $('#message').val("");
                     $('.greeting').html(`<p style="color:green">${data.body}</p>`);
                     $('.greeting').fadeOut(3000);
                 },
