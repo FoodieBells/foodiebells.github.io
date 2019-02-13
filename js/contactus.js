@@ -7,7 +7,8 @@
             e.preventDefault();
             $.ajax('https://foodiebells-83042.firebaseapp.com/contact/',{
                 type:'POST',
-                data: JSON.stringify({ 
+                data: JSON.stringify({
+                    "name":$('#name').val(),
                     "from":$('#from').val(),
                     "subject":$('#subject').val(),
                     "message":$('#message').val() 
