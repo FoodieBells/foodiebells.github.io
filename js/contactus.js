@@ -13,13 +13,19 @@
                     "subject":$('#subject').val(),
                     "message":$('#message').val() 
                     }),
-                //contentType: "application/json; charset=utf-8",
+                contentType: "application/json",
                 //dataType: "json",
                 success: function(data){
-                    $('.greeting').append(data);
+                    $('#name').val("");
+                    $('#from').val(""),
+                    $('#to').val(""),
+                    $('#message').val(""),
+                    $('.greeting').html(`<p style="color:green">${data.body}</p>`);
+                    $('.greeting').fadeOut(3000);
                 },
                 failure: function(errMsg) {
                     $('.greeting').append('Error' + errMsg);
+                    $('.greeting').fadeOut(3000);
                 }
                 });
             });
