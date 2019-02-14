@@ -17,6 +17,7 @@
                     $('#name').val("");
                     $('#from').val("");
                     $('#to').val("");
+                    $('#subject').val("");
                     $('#message').val("");
                     $('.greeting').html(`<p style="color:green">${data.body}</p>`);
                     $('.greeting').fadeOut(3000);
