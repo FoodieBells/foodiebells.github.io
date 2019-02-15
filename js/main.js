@@ -24,7 +24,7 @@ $(window).on('load', function() {
 		$.ajax('https://foodiebells-83042.firebaseapp.com/subscribe/',{
 			type:'POST',
 			data: {
-				"name":$('#subscriberName').val(),
+				"firstName":$('#subscriberName').val(),
 				"email":$('#subscriberEmail').val() 
 				},
 			success: function(data){
