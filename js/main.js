@@ -16,7 +16,29 @@ $(window).on('load', function() {
 	$(".loader").fadeOut(); 
 	$("#preloder").delay(400).fadeOut("slow");
 
-
+	/*------------------
+		subscribe logic
+	--------------------*/
+	$('#subscribe').on('click', function(e){
+		e.preventDefault();
+		$.ajax('https://foodiebells-83042.firebaseapp.com/subscribe/',{
+			type:'POST',
+			data: {
+				"name":$('#subscribername').val(),
+				"email":$('#subscriberemail').val() 
+				},
+			success: function(data){
+				$('#subscribername').val("");
+				$('#subscriberemail').val("");
+				$('.subscriber-greeting').html(`<p style="color:green">${data}</p>`);
+				$('.subscriber-greeting').fadeOut(3000);
+			},
+			failure: function(errMsg) {
+				$('.subscriber-greeting').append('Error' + errMsg);
+				$('.subscriber-greeting').fadeOut(3000);
+			}
+			});
+		});
 
 
 
