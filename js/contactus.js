@@ -23,7 +23,7 @@
                     $('.greeting').fadeOut(3000);
                 },
                 failure: function(errMsg) {
-                    $('.greeting').append('Error' + errMsg);
+                    $('.greeting').html(`<p style="color:red">Error + ${errMsg}`);
                     $('.greeting').fadeOut(3000);
                 }
                 });

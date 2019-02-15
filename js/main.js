@@ -24,17 +24,17 @@ $(window).on('load', function() {
 		$.ajax('https://foodiebells-83042.firebaseapp.com/subscribe/',{
 			type:'POST',
 			data: {
-				"name":$('#subscribername').val(),
-				"email":$('#subscriberemail').val() 
+				"name":$('#subscriberName').val(),
+				"email":$('#subscriberEmail').val() 
 				},
 			success: function(data){
-				$('#subscribername').val("");
-				$('#subscriberemail').val("");
+				$('#subscriberName').val("");
+				$('#subscriberEmail').val("");
 				$('.subscriber-greeting').html(`<p style="color:green">${data}</p>`);
 				$('.subscriber-greeting').fadeOut(3000);
 			},
 			failure: function(errMsg) {
-				$('.subscriber-greeting').append('Error' + errMsg);
+				$('.subscriber-greeting').html(`<p style="color:red">Error + ${errMsg}`);
 				$('.subscriber-greeting').fadeOut(3000);
 			}
 			});
