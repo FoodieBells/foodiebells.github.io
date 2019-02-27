@@ -16,6 +16,13 @@ $(window).on('load', function() {
 	$(".loader").fadeOut(); 
 	$("#preloder").delay(400).fadeOut("slow");
 
+	/*------------------------
+		subscribe hide for now
+	--------------------*/
+	$('.header-top').hide();
+	$('.header-bottom').css('border','1px solid #ff2a6b');
+
+
 	/*------------------
 		subscribe logic
 	--------------------*/
