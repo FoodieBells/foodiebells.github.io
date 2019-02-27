@@ -14,7 +14,7 @@ $(window).on('load', function() {
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut(); 
-	$("#preloder").delay(400).fadeOut("slow");
+	$("#preloder").delay(300).fadeOut("slow");
 
 	/*------------------------
 		subscribe hide for now
@@ -26,7 +26,7 @@ $(window).on('load', function() {
 	/*------------------
 		subscribe logic
 	--------------------*/
-	$('#subscribe').on('click', function(e){
+	/*------------------$('#subscribe').on('click', function(e){
 		e.preventDefault();
 		$.ajax('https://foodiebells-83042.firebaseapp.com/subscribe/',{
 			type:'POST',
@@ -45,7 +45,7 @@ $(window).on('load', function() {
 				$('.subscriber-greeting').fadeOut(3000);
 			}
 			});
-		});
+		}); */
 
 
 
