@@ -1019,6 +1019,13 @@ ol {
   About Pages
 ---------------------*/
 
+.about-text img {
+	clip-path: circle();
+	shape-outside: circle();
+	float: right;
+	border: 3px solid #ff2a6b;
+}
+
 .sf-warp {
 	width: 1229px;
 	margin: 72px auto 0;
@@ -1502,6 +1509,10 @@ ol {
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.about-text img {
+		clip-path: circle();
+		float: none;
+	}
 	.site-logo {
 		max-width: 170px;
 	}
@@ -1581,6 +1592,10 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
+	.about-text img {
+		clip-path: circle();
+		float: none;
+	}
 	.main-menu {
 		display: none;
 		float: none;
@@ -1731,6 +1746,10 @@ ol {
 /* Medium Mobile :480px. */
 
 @media only screen and (max-width: 576px) {
+	.about-text img {
+		clip-path: circle();
+		float: none;
+	}
 	.add-warp {
 		padding-left: 0px;
 	}
@@ -1766,6 +1785,10 @@ ol {
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+	.about-text img {
+		clip-path: circle();
+	
+	}
 	.site-logo {
 		max-width: 170px;
 	}
@@ -1808,6 +1831,10 @@ ol {
 }
 
 @media only screen and (max-width: 330px) {
+	.about-text img {
+		clip-path: circle();
+	
+	}
 	.recipe-filter-warp .filter-top,
 	.recipe .recipe-info-warp {
 		padding-right: 0;
