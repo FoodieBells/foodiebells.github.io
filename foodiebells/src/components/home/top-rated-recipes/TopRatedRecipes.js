@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import restaurantReview from '../../../assets/img/blog/1.jpg'
 
 const TopRatedRecipes = () => {
@@ -172,8 +173,8 @@ const TopRatedRecipes = () => {
 							<h5>Italian restaurant Review</h5>
 							<span>By Maria Williams</span>
 							<p>Donec quam felis, ultricies nec, pellente sque eu, pretium quis, sem. Nulla conseq uat massa quis enim. </p>
-							<a href="#" className="comment">2 Comments</a>
-							<a href="#" className="readmore"><i className="fa fa-angle-right"></i></a>
+							<Link to="#" className="comment">2 Comments</Link>
+							<Link to="#" className="readmore"><i className="fa fa-angle-right"></i></Link>
 						</div>
 					</div>
 				</div>

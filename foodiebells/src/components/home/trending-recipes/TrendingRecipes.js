@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import blogPic from '../../../assets/img/blog/1.jpg'
 
 const TrendingRecipes = () => {
@@ -19,9 +20,9 @@ const TrendingRecipes = () => {
 										<div className="col-lg-5">
 												<div className="blog-post-details">
 														<p className="text-secondary">FEBRUARY 1, 2019</p>
-														<h4><a href="#">30 minute meal prep: roasted vegetable bowls with green tahini</a></h4>
+														<h4><Link to="#">30 minute meal prep: roasted vegetable bowls with green tahini</Link></h4>
 														<h6 className="mt-2">If I could eat this every day for lunch for ever and ever, I’d be a happy girl. It’s just hard to go wrong with roasted vegetables – and I…</h6>
-														<h5 className="mt-3"><a href="#">continue reading...</a></h5>
+														<h5 className="mt-3"><Link to="#">continue reading...</Link></h5>
 												</div>
 										</div>
 									</div>
@@ -34,9 +35,9 @@ const TrendingRecipes = () => {
 									<div className="col-lg-5">
 											<div className="blog-post-details">
 													<p className="text-secondary">FEBRUARY 1, 2019</p>
-													<h4><a href="#">30 minute meal prep: roasted vegetable bowls with green tahini</a></h4>
+													<h4><Link to="#">30 minute meal prep: roasted vegetable bowls with green tahini</Link></h4>
 													<h6 className="mt-2">If I could eat this every day for lunch for ever and ever, I’d be a happy girl. It’s just hard to go wrong with roasted vegetables – and I…</h6>
-													<h5 className="mt-3"><a href="#">continue reading...</a></h5>
+													<h5 className="mt-3"><Link to="#">continue reading...</Link></h5>
 											</div>
 									</div>
 								</div>
@@ -49,9 +50,9 @@ const TrendingRecipes = () => {
 										<div className="col-lg-5">
 												<div className="blog-post-details">
 														<p className="text-secondary">FEBRUARY 1, 2019</p>
-														<h4><a href="#">30 minute meal prep: roasted vegetable bowls with green tahini</a></h4>
+														<h4><Link to="#">30 minute meal prep: roasted vegetable bowls with green tahini</Link></h4>
 														<h6 className="mt-2">If I could eat this every day for lunch for ever and ever, I’d be a happy girl. It’s just hard to go wrong with roasted vegetables – and I…</h6>
-														<h5 className="mt-3"><a href="#">continue reading...</a></h5>
+														<h5 className="mt-3"><Link to="#">continue reading...</Link></h5>
 												</div>
 										</div>
 									</div>
@@ -70,8 +71,8 @@ const TrendingRecipes = () => {
 									<h5>Italian restaurant Review</h5>
 									<span>By Maria Williams</span>
 									<p>Donec quam felis, ultricies nec, pellente sque eu, pretium quis, sem. Nulla conseq uat massa quis enim. </p>
-									<a href="#" className="comment">2 Comments</a>
-									<a href="#" className="readmore"><i className="fa fa-angle-right"></i></a>
+									<Link to="#" className="comment">2 Comments</Link>
+									<Link to="#" className="readmore"><i className="fa fa-angle-right"></i></Link>
 								</div>
 							</div>
 						</div>

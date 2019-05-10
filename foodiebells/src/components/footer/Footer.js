@@ -15,21 +15,21 @@ const Footer = () => {
 						<img src={logo} alt="" />
 					</div>
 					<div className="footer-social">
-						<Link href="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></Link>
-						<Link href="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></Link>
-						<Link href="https://www.facebook.com/foodiebellsofficial"><i className="fa fa-facebook"></i></Link>
-						<Link href="#"><i className="fa fa-twitter"></i></Link>
-						<Link href="https://www.behance.net/foodiebell6778"><i className="fa fa-behance"></i></Link>
-						<Link href="#"><i className="fa fa-linkedin"></i></Link>
+						<Link to="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></Link>
+						<Link to="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></Link>
+						<Link to="https://www.facebook.com/foodiebellsofficial"><i className="fa fa-facebook"></i></Link>
+						<Link to="#"><i className="fa fa-twitter"></i></Link>
+						<Link to="https://www.behance.net/foodiebell6778"><i className="fa fa-behance"></i></Link>
+						<Link to="#"><i className="fa fa-linkedin"></i></Link>
 					</div>
 				</div>
 				<div className="col-lg-6 text-lg-right">
 					<ul className="footer-menu">
-						<li><Link href="/">Home</Link></li>
-						<li><Link href="#">Features</Link></li>
-						<li><Link href="/recipes/">Recipes</Link></li>
-						<li><Link href="/privacy-policy/">Privacy-Policy</Link></li>
-						<li><Link href="/contact/">Contact</Link></li>
+						<li><Link to="/">Home</Link></li>
+						<li><Link to="#">Features</Link></li>
+						<li><Link to="/recipes/">Recipes</Link></li>
+						<li><Link to="/privacy-policy/">Privacy-Policy</Link></li>
+						<li><Link to="/contact/">Contact</Link></li>
 					</ul>
 					<p className="copyright">
 						Copyright &copy; <script>document.write(new Date().getFullYear());</script> FoodieBells Inc.

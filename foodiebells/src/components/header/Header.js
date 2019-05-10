@@ -11,7 +11,7 @@ const Header = () => {
 		<div className="header-bottom">
 			<div className="container">
 				<Link to="/" className="site-logo ">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="FoodieBells" />
 				</Link>
 				<div className="nav-switch">
 					<i className="fa fa-bars"></i>

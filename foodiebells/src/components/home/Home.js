@@ -6,7 +6,7 @@ import MainCarousel from './herocarousel/MainCarousel';
 
 const Home = () => {
     return(
-        <div>
+        <div style={{paddingTop : '91px'}}>
             <MainCarousel/>
             <AdFlex/>
             <TrendingRecipes/>
