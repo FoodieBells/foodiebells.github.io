@@ -10,28 +10,28 @@ const MainCarousel = () => {
         <section className="hero-section">
 		<Carousel className="hero-slider owl-carousel" >
 			<Carousel.Item className="hero-slide-item set-bg" style={carouselStyle.s1}>
-				<Carousel.Caption style={carouselStyle.ht}>
+				<Carousel.Caption className="hs-text" style={carouselStyle.ht}>
 					<h2 style={carouselStyle.t1}><span style={carouselStyle.ts1}>Easy Recipes</span></h2>
 					<h2 style={carouselStyle.t2}><span style={carouselStyle.ts2}>from the naturals</span></h2>
 					<h2 style={carouselStyle.t3}><span style={carouselStyle.ts3}>with Love</span></h2>
 				</Carousel.Caption>
 			</Carousel.Item>,
 			<Carousel.Item className="hero-slide-item set-bg" style={carouselStyle.s2}>
-				<Carousel.Caption style={carouselStyle.ht}>
+				<Carousel.Caption className="hs-text" style={carouselStyle.ht}>
 					<h2 style={carouselStyle.t1}><span style={carouselStyle.ts1}>Yummy flavours</span></h2>
 					<h2 style={carouselStyle.t2}><span style={carouselStyle.ts2}>easy to prepare</span></h2>
 					<h2 style={carouselStyle.t3}><span style={carouselStyle.ts3}>for all the foodies</span></h2>
 				</Carousel.Caption>
 			</Carousel.Item>,
 			<Carousel.Item className="hero-slide-item set-bg" style={carouselStyle.s3}>
-				<Carousel.Caption style={carouselStyle.ht}>
+				<Carousel.Caption className="hs-text" style={carouselStyle.ht}>
 					<h2 style={carouselStyle.t1}><span style={carouselStyle.ts1}>Healthy Recipes</span></h2>
 					<h2 style={carouselStyle.t2}><span style={carouselStyle.ts2}>from the best chefs</span></h2>
 					<h2 style={carouselStyle.t3}><span style={carouselStyle.ts3}>for all</span></h2>
 				</Carousel.Caption>
 			</Carousel.Item>,
 			<Carousel.Item className="hero-slide-item set-bg" style={carouselStyle.s4}>
-				<Carousel.Caption style={carouselStyle.ht}>
+				<Carousel.Caption className="hs-text" style={carouselStyle.ht}>
 					<h2 style={carouselStyle.t1}><span style={carouselStyle.ts1}>Refereshing Tastes</span></h2>
 					<h2 style={carouselStyle.t2}><span style={carouselStyle.ts2}>helps Weightloss</span></h2>
 					<h2 style={carouselStyle.t3}><span style={carouselStyle.ts3}>full of Goodness</span></h2>
@@ -45,6 +45,7 @@ const MainCarousel = () => {
 
 const carouselStyle = {
 	s1:{
+		
 		backgroundImage: `url(${s1})`
 	},
 	s2:{
@@ -97,20 +98,20 @@ const carouselStyle = {
    		borderRadius: '5px',
    		position: 'relative',
         boxShadow: '-1px -5px 20px 0px rgba(0, 0, 0, 0.3)',
-   		opacity: '0',
+   		opacity: '1',
 		padding: '0 28px',
    		background: '#ff2a6b',
-        transform: 'rotate(4deg)'
+        transform: 'rotate(0deg)'
 	},
 	ts2:{
 		display: 'inline-block',
    		borderRadius: '5px',
    		position: 'relative',
         boxShadow: '-1px -5px 20px 0px rgba(0, 0, 0, 0.3)',
-		opacity: '0',
-		padding: '5px 28px',
+		opacity: '1',
+		padding: '2px 28px',
    		background: '#fdc856',
-        transform: 'rotate(0deg)',
+        transform: 'rotate(-6deg)',
    		left: '0',
    		top: '0'
 	},
@@ -119,10 +120,10 @@ const carouselStyle = {
    		borderRadius: '5px',
    		position: 'relative',
         boxShadow: '-1px -5px 20px 0px rgba(0, 0, 0, 0.3)',
-		opacity: '0',
-		padding: '10px 28px',
+		opacity: '1',
+		padding: '2px 28px',
 		background: '#bdde64',
-		transform: 'rotate(0deg)',
+		transform: 'rotate(3deg)',
 		top: '0'
 	}
 }

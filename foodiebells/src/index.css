@@ -226,7 +226,6 @@
  
  .header-section {
   width: 100vw;
-  height: 91px;
   background: linear-gradient(to right, #ff2a6b, rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9));
   z-index: 10;
   position: fixed;
@@ -371,7 +370,7 @@
  }
  
  .hero-slide-item {
-   height: 694px;
+   height: 580px;
    display: table;
    width: 100%;
    overflow: hidden;

@@ -15,24 +15,24 @@ const Footer = () => {
 						<img src={logo} alt="" />
 					</div>
 					<div className="footer-social">
-						<Link to="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></Link>
-						<Link to="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></Link>
-						<Link to="https://www.facebook.com/foodiebellsofficial"><i className="fa fa-facebook"></i></Link>
-						<Link to="#"><i className="fa fa-twitter"></i></Link>
-						<Link to="https://www.behance.net/foodiebell6778"><i className="fa fa-behance"></i></Link>
-						<Link to="#"><i className="fa fa-linkedin"></i></Link>
+						<a href="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></a>
+						<a href="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></a>
+						<a href="https://www.facebook.com/foodiebellsofficial"><i className="fa fa-facebook"></i></a>
+						<a href="https://www.twitter.com"><i className="fa fa-twitter"></i></a>
+						<a href="https://www.behance.net/foodiebell6778"><i className="fa fa-behance"></i></a>
+						<a href="https://www.linkedin.com"><i className="fa fa-linkedin"></i></a>
 					</div>
 				</div>
 				<div className="col-lg-6 text-lg-right">
 					<ul className="footer-menu">
 						<li><Link to="/">Home</Link></li>
 						<li><Link to="#">Features</Link></li>
-						<li><Link to="/recipes/">Recipes</Link></li>
-						<li><Link to="/privacy-policy/">Privacy-Policy</Link></li>
-						<li><Link to="/contact/">Contact</Link></li>
+						<li><Link to="/recipes">Recipes</Link></li>
+						<li><Link to="/privacy-policy">Privacy-Policy</Link></li>
+						<li><Link to="/contact">Contact</Link></li>
 					</ul>
 					<p className="copyright">
-						Copyright &copy; <script>document.write(new Date().getFullYear());</script> FoodieBells Inc.
+						Copyright &copy; {year} FoodieBells Inc.
 					</p>
 				</div>
 			</div>
@@ -41,6 +41,7 @@ const Footer = () => {
     )
 };
 
+const year = new Date().getFullYear();
 const footerStyle = {
     backgroundImage: `url(${footerBg})`,
 }
