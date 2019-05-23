@@ -7,6 +7,8 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import PrivacyPolicy from './components/privacy-policy/PrivacyPolicy';
 import ContactUs from './components/contactus/ContactUs';
+import Shop from './components/shop/Shop';
+import Recipes from './components/recipes/Recipes';
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
       <Header/>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/recipes" component={Recipes} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/contact" component={ContactUs} />
+      <Route path="/shop" component={Shop} />
       <Footer/>
     </div>
     </Router>
