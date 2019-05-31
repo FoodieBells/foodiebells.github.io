@@ -9,6 +9,7 @@ import PrivacyPolicy from './components/privacy-policy/PrivacyPolicy';
 import ContactUs from './components/contactus/ContactUs';
 import Shop from './components/shop/Shop';
 import Recipes from './components/recipes/Recipes';
+import RecipePage from './components/recipe-page/RecipePage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/recipes" component={Recipes} />
+      <Route path="/recipe/" component={RecipePage} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/contact" component={ContactUs} />
       <Route path="/shop" component={Shop} />
