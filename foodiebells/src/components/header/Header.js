@@ -1,10 +1,15 @@
-import React from 'react'
-import {Navbar,Nav} from 'react-bootstrap'
-import logo from '../../assets/img/logo.png'
+import React from 'react';
+import logo from '../../assets/img/logo.png';
+import './Header.css';
+import {Link} from 'react-router-dom';
 
-
-
-
+const linkItemStyle = {
+	fontWeight: '500',
+	padding:' 5px 0'
+}
+const linkItemAStyle = {
+	color: '#474747'
+}
 class Header extends React.Component{
 	state = {
 		nav : {
@@ -13,13 +18,6 @@ class Header extends React.Component{
 					alignSelf: 'flex-start',
 				   	display: 'inline-block',
 				   	width: '250px'
-			},
-			navLinks:{
-					display: 'inline-block',
-				   	fontSize: '15px',
-				   	fontWeight: '500',
-				   	color: '#474747',
-				   	padding: '0 25px ',
 			}
 		}
 		
@@ -36,9 +34,6 @@ class Header extends React.Component{
 						...prevState.nav.logo,
 						width:'180px'
 					},
-					navLinks:{
-						...prevState.nav.navLinks
-					}
 				}
 				})
 				)
@@ -52,9 +47,6 @@ class Header extends React.Component{
 						...prevState.nav.logo,
 						width:'250px'
 					},
-					navLinks:{
-						...prevState.nav.navLinks
-					}
 
 				}
 				})
@@ -68,33 +60,37 @@ class Header extends React.Component{
         window.removeEventListener('scroll', this.listenScrollEvent);
 	}
 	
-
+ 
 	render(){
 		return(
-			<Navbar fixed="top" style={{height:this.state.nav.barheight,background: 'linear-gradient(to right, #ff2a6b, rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9))',padding:'0 60px',overflow:'visible'}} 
-				expand="lg">
-				<Navbar.Brand href="/" style={this.state.nav.logo}>
-						<img src={logo} alt="FoodieBells" />
-					</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="mr-auto ">
-						<Nav.Link style={this.state.nav.navLinks} href="/about">About</Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} href="/recipes">Recipes</Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} href="/shop">Shop</Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} className="hide-on-small" href="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} className="hide-on-small" href="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} className="hide-on-small" href="https://www.facebook.com/foodiebellsofficial"><i className="fa fa-facebook"></i></Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} className="hide-on-small" href="https://www.twitter.com"><i className="fa fa-twitter"></i></Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} className="hide-on-small" href="https://www.behance.net/foodiebell6778"><i className="fa fa-behance"></i></Nav.Link>
-						<Nav.Link style={this.state.nav.navLinks} className="hide-on-small" href="https://www.linkedin.com"><i className="fa fa-linkedin"></i></Nav.Link>
-					</Nav>
+			<header  style={{height:this.state.nav.barheight,padding:'0 60px',overflow:'visible'}} >
+
+				<input type="checkbox" id="opentoggle"/>
+				<label className="opentoggle-label" for="opentoggle"><i className="fa fa-bars "></i></label> 	
+				
+				<Link to="/">
+					<div className="logo-div" href="/" style={this.state.nav.logo}>
+						<img className="header-logo" src={logo} alt="FoodieBells" />
+					</div>
+					</Link>
+				<nav id="nav">
+					<ul className="link-items">
+						<li style={linkItemStyle}> <a style={linkItemAStyle} href="/about">About</a></li>
+						<li style={linkItemStyle}> <a style={linkItemAStyle} href="/recipes">Recipes</a></li>
+						<li style={linkItemStyle}> <a style={linkItemAStyle} href="/shop">Shop</a></li>
+						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></a></li>
+						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></a></li>
+						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.facebook.com/foodiebellsofficial"><i className="fa fa-facebook"></i></a></li>
+						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.twitter.com"><i className="fa fa-twitter"></i></a></li>
+						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.behance.net/foodiebell6778"><i className="fa fa-behance"></i></a></li>
+						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.linkedin.com"><i className="fa fa-linkedin"></i></a></li>
+					</ul>
 					<div className="header-search">
 						<input id="search" name="search" type="text" placeholder="Search" />
 						<a href="/"><i className="fa fa-search"></i></a>
 					</div>
-				</Navbar.Collapse>
-			</Navbar>
+				</nav>
+			</header>
 
   
 		)

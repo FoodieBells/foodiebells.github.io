@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {getRecipeById} from '../../service/RecipeService';
+import BackButton from '../utils/back-button/BackButton';
 
 class RecipePage extends Component {
     state = {
@@ -7,14 +7,17 @@ class RecipePage extends Component {
     }
     componentDidMount() {
         const {data} = this.props.location;
+        if(data==null){
+            this.props.history.push("/");
+        }
         this.setState({recipe : data});
         
     }
     render() {
         return (
             <section style={{paddingTop : '91px'}} className="recipe-details-section">
-            <i className="fa fa-arrow-alt-circle-left"></i>
             <div className="container">
+                <BackButton />
                 <div className="recipe-meta">
                     <div className="racipe-cata">
                         <span>For Begginers</span>

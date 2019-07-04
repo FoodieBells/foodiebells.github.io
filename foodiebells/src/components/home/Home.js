@@ -1,20 +1,22 @@
 import React from 'react'
-import TrendingRecipes from './trending-recipes/TrendingRecipes';
 import TopRatedRecipes from './top-rated-recipes/TopRatedRecipes';
 import AdFlex from './ad-flex/AdFlex';
 import MainCarousel from './herocarousel/MainCarousel';
+import TrendingRecipes from './trending-recipes/TrendingRecipes';
 import InstagramFeed from './instagram-feed/InstagramFeed';
 
-const Home = () => {
-    return(
-        <div style={{paddingTop : '91px'}}>
-            <MainCarousel/>
-            <AdFlex/>
-            <InstagramFeed></InstagramFeed>
-            <TrendingRecipes/>
-            <TopRatedRecipes/>
-        </div>
-    );
+class Home extends React.Component {
+    render(){
+        return(
+            <div style={{paddingTop : '91px'}}>
+                <MainCarousel/>
+                <AdFlex/>
+                <TrendingRecipes/>
+                <InstagramFeed/>
+                <TopRatedRecipes/>
+            </div>
+        );
+    }
 }
 
 export default Home;

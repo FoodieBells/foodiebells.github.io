@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchData } from './Actions.js'
+import { fetchData } from './Actions'
 
 export default class InstagramFeed extends React.Component {
 

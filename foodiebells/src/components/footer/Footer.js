@@ -11,9 +11,11 @@ const Footer = () => {
 		<div className="container-fluid">
 			<div className="row">
 				<div className="col-lg-6">
-					<div className="footer-logo">
-						<img src={logo} alt="" />
-					</div>
+					<Link to="/">
+						<div className="footer-logo">
+							<img src={logo} alt="" />
+						</div>
+					</Link>
 					<div className="footer-social">
 						<a href="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></a>
 						<a href="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></a>
