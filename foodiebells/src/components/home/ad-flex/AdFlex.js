@@ -22,7 +22,7 @@ const AdFlex = () => {
 								<li>Easy to make</li>
 								<li>Step by Step Video Tutorial</li>
 								<li>Gluten Free</li>
-								<li>Healty  Ingredients</li>
+								<li>Healthy  Ingredients</li>
 							</ul>
 						</div>
 					</div>

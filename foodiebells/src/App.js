@@ -10,11 +10,13 @@ import ContactUs from './components/contactus/ContactUs';
 import Shop from './components/shop/Shop';
 import Recipes from './components/recipes/Recipes';
 import RecipePage from './components/recipe-page/RecipePage';
+import ScrollToTop from 'react-router-scroll-top';
 
 function App() {
   return (
     <Router>
-    <div>
+    
+    <ScrollToTop>
       <Header/>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
@@ -24,7 +26,8 @@ function App() {
       <Route path="/contact" component={ContactUs} />
       <Route path="/shop" component={Shop} />
       <Footer/>
-    </div>
+    
+    </ScrollToTop>
     </Router>
   );
 }

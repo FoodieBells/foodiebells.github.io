@@ -1,5 +1,6 @@
 import React from 'react'
 import PageTitle from '../utils/page-title/PageTitle';
+import logo from '../../assets/img/logo.png';
 const ContactUs = () => {
     return(
         <div style={{paddingTop : '91px'}}>
@@ -10,7 +11,7 @@ const ContactUs = () => {
 				<div class="col-lg-8">
 					<div class="contact-form-warp section-title">
 						<h4>Leave a comment</h4>
-						<form class="contact-form">
+						<form class="contact-form" style={{paddingRight:'5px',borderRight:' solid pink'}}>
 							<div class="row">
 								<div class="col-md-6">
 									<input id="name" type="text" placeholder="Name"/>
@@ -21,7 +22,7 @@ const ContactUs = () => {
 								<div class="col-md-12">
 									<input id="subject" type="text" placeholder="Subject"/>
 									<textarea id="message" placeholder="Message"></textarea>
-									<button id="contactNow" class="site-btn">Send</button>
+									<button id="contactNow" style={{borderRadius:'50%'}} class="site-btn">Send</button>
 									<div class="greeting"></div>
 								</div>
 							</div>
@@ -30,7 +31,7 @@ const ContactUs = () => {
 				</div>
 				<div class="col-lg-4">
 					<div class="contact-logo">
-						<img src="../img/logo.png" alt=""/>
+						<img src={logo} alt=""/>
 					</div>
 					<div class="contact-info">
 						<ul class="ct-list">

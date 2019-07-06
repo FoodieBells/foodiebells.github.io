@@ -13,7 +13,7 @@ class Home extends React.Component {
                 <AdFlex/>
                 <TrendingRecipes/>
                 <InstagramFeed/>
-                <TopRatedRecipes/>
+                {/*<TopRatedRecipes/>*/}
             </div>
         );
     }
