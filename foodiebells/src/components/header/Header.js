@@ -75,13 +75,13 @@ class Header extends React.Component{
 					</Link>
 				<nav id="nav">
 					<ul className="link-items">
-						<li style={linkItemStyle}> <a style={linkItemAStyle} href="/about">About</a></li>
-						<li style={linkItemStyle}> <a style={linkItemAStyle} href="/recipes">Recipes</a></li>
-						<li style={linkItemStyle}> <a style={linkItemAStyle} href="/shop">Shop</a></li>
+						<li style={linkItemStyle}> <Link style={linkItemAStyle} to="/about">About</Link></li>
+						<li style={linkItemStyle}> <Link style={linkItemAStyle} to="/recipes">Recipes</Link></li>
+						<li style={linkItemStyle}> <Link style={linkItemAStyle} to="/shop">Shop</Link></li>
 						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.pinterest.com/foodiebellsofficial"><i className="fa fa-pinterest"></i></a></li>
 						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.instagram.com/foodiebellsofficial"><i className="fa fa-instagram"></i></a></li>
 						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.facebook.com/foodiebellsofficial"><i className="fa fa-facebook"></i></a></li>
-						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.twitter.com"><i className="fa fa-twitter"></i></a></li>
+						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.twitter.com/foodie_bells/"><i className="fa fa-twitter"></i></a></li>
 						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.behance.net/foodiebell6778"><i className="fa fa-behance"></i></a></li>
 						<li style={linkItemStyle} className="hide-on-small" > <a style={linkItemAStyle} href="https://www.linkedin.com"><i className="fa fa-linkedin"></i></a></li>
 					</ul>
