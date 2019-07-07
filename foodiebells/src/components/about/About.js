@@ -1,7 +1,6 @@
 import React from 'react'
 import PageTitle from '../utils/page-title/PageTitle';
-const About = () => {
-    return(
+const About = () => (
         <div style={{paddingTop : '91px'}}>
                 <PageTitle title="About us" />
                 <section class="about-section spad">
@@ -26,8 +25,7 @@ const About = () => {
             </section>
         </div>
         
-    )
-};
+    );
 
 
  

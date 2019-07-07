@@ -45,7 +45,7 @@ class RecipePage extends Component {
                         </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-5">
                         <div className="recipe-filter-warp">
                             <div className="filter-top">
                                 <div className="filter-top-text">
@@ -93,23 +93,19 @@ class RecipePage extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-7">
                             <h2 className="mb-3">Directions</h2>
                         <ul className="recipe-info-list">
                             <li>
-                                <h2><i className="fa fa-check-square-o" aria-hidden="true"></i></h2>
                                 <p>Heat oven to 375° F. Heat the oil in a large saucepan over medium heat. Add the onion and cook, stirring occasionally, until soft and golden brown, 10 to 12 minutes. Add the curry powder, ¾ teaspoon salt, and ½ teaspoon pepper and cook, stirring, until fragrant, about 1 minute. Stir in the potatoes and peas.</p>
                             </li>
                             <li>
-                                <h2><i className="fa fa-check-square-o" aria-hidden="true"></i></h2>
                                 <p>Unroll the piecrusts and cut each into 6 triangles. Place a heaping tablespoon of the potato mixture in the center of each piece. Gather the corners of the dough and pinch to form a point. Pinch the seams to seal. Transfer to a baking sheet.</p>
                             </li>
                             <li>
-                                <h2><i className="fa fa-check-square-o" aria-hidden="true"></i></h2>
                                 <p>Bake the samosas for 20 to 25 minutes, until they turn golden.</p>
                             </li>
                             <li>
-                                <h2><i className="fa fa-check-square-o" aria-hidden="true"></i></h2>
                                 <p>Serve with the Imli, Pudina or Mango chutney.</p>
                             </li>
                         

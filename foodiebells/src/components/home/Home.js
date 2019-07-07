@@ -1,5 +1,5 @@
 import React from 'react'
-import TopRatedRecipes from './top-rated-recipes/TopRatedRecipes';
+//import TopRatedRecipes from './top-rated-recipes/TopRatedRecipes';
 import AdFlex from './ad-flex/AdFlex';
 import MainCarousel from './herocarousel/MainCarousel';
 import TrendingRecipes from './trending-recipes/TrendingRecipes';

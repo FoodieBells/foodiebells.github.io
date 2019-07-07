@@ -3,6 +3,9 @@
   Version: 1.0
  ====================================*/
 
+ *,*::before,*::after {
+  box-sizing: border-box
+}
  html,
  body {
    height: 100%;
@@ -1188,23 +1191,26 @@
  
  .recipe-info-list {
    list-style: none;
+   padding-top: 20px;
    padding-left: 15px;
  }
  
+ .recipe-info-list li:before {    
+  font-family: 'FontAwesome';
+  content: '\f046';
+  font-weight: 600;
+  font-size: 30px;
+  margin:0 5px 0 -20px;
+  padding-bottom: 20px
+}
  .recipe-info-list li {
-   margin-bottom: 30px;
+   margin-bottom: 20px;
  }
  
- .recipe-info-list h2 {
-   float: left;
-   font-weight: 600;
-   min-width: 60px;
- }
  
  .recipe-info-list p {
-   padding-left: 70px;
-   margin-bottom: 0;
-   padding-top: 13px;
+   display: inline;
+   padding-left: 10px;
    font-size: 14px;
  }
  
