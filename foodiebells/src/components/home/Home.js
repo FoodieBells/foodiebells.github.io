@@ -10,8 +10,8 @@ class Home extends React.Component {
         return(
             <div style={{paddingTop : '91px'}}>
                 <MainCarousel/>
-                <AdFlex/>
                 <TrendingRecipes/>
+                <AdFlex/>
                 <InstagramFeed/>
                 {/*<TopRatedRecipes/>*/}
             </div>

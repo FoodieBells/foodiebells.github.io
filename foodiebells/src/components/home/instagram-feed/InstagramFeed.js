@@ -1,5 +1,6 @@
-import React from 'react'
-import { fetchData } from './Actions'
+import React from 'react';
+import { fetchData } from './Actions';
+import './ig.css';
 
 export default class InstagramFeed extends React.Component {
 
@@ -60,9 +61,9 @@ export default class InstagramFeed extends React.Component {
 	postCard(){
 		return this.state.igSent ? 
 			this.state.igData.map((post) => 
-			<div className="col-sm-12 col-md-6 col-lg-4" key={post.id}>
+			<div className=" col-sm-12 col-md-6 col-lg-4" key={post.id}>
 				<a href={post.link}>
-				<img style={{width:'300px',height:'250px',margin:'10px'}} src={post.images.standard_resolution.url} alt='' className="img-thumbnail" />
+				<img style={{width:'300px',height:'250px',margin:'10px'}} src={post.images.standard_resolution.url} alt='' className="img-thumbnail ig-post" />
 				</a>
 			</div>
 			)

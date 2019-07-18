@@ -12,6 +12,7 @@ import Recipes from './components/recipes/Recipes';
 import RecipePage from './components/recipe-page/RecipePage';
 import ScrollToTop from 'react-router-scroll-top';
 import Page404 from './components/page404/Page404';
+import Test from './components/Test';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/contact" component={ContactUs} />
           <Route path="/shop" component={Shop} />
+          <Route path="/test" component={Test} />
           <Route  component={Page404} />
           </Switch>
         </ScrollToTop>

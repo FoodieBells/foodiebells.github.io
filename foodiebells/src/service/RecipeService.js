@@ -15,79 +15,79 @@ import cheeseCake3 from '../assets/img/recipes/12.jpg';
 export const myRecipesData =  [
         {   
             id:1,
-            name:"Potato Samosas",
+            title:"Potato Samosas",
             link:potatopic,
             pic:potatopic,
         },
         {
             id:2,
-            name:"Traditional Pizza",
+            title:"Traditional Pizza",
             link:traditionalPizza,
             pic:traditionalPizza
         },
         {
             id:3,
-            name:"Italian home-made Pasta",
+            title:"Italian home-made Pasta",
             link:italianPasta,
             pic:italianPasta
         },
         {
             id:4,
-            name:"Cheese Cake Tart",
+            title:"Cheese Cake Tart",
             link:cheeseCake,
             pic:cheeseCake
         },
         {
             id:5,
-            name:"Traditional Pizza1",
+            title:"Traditional Pizza1",
             link:traditionalPizza1,
             pic:traditionalPizza1
         },
         {
             id:6,
-            name:"Italian home-made Pasta1",
+            title:"Italian home-made Pasta1",
             link:italianPasta1,
             pic:italianPasta1
         },
         {
             id:7,
-            name:"Cheese Cake Tart1",
+            title:"Cheese Cake Tart1",
             link:cheeseCake1,
             pic:cheeseCake1
         },
         {
             id:8,
-            name:"Traditional Pizza2",
+            title:"Traditional Pizza2",
             link:traditionalPizza2,
             pic:traditionalPizza2
         },
         {
             id:9,
-            name:"Italian home-made Pasta2",
+            title:"Italian home-made Pasta2",
             link:italianPasta2,
             pic:italianPasta2
         },
         {
             id:10,
-            name:"Cheese Cake Tart2",
+            title:"Cheese Cake Tart2",
             link:cheeseCake2,
             pic:cheeseCake2
         },
         {
             id:11,
-            name:"Traditional Pizza3",
+            title:"Traditional Pizza3",
             link:traditionalPizza3,
             pic:traditionalPizza3
         },
         {   
             id:12,
-            name:"Italian home-made Pasta3",
+            title:"Italian home-made Pasta3",
             link:italianPasta3,
             pic:italianPasta3
         },
         {
             id:13,
-            name:"Cheese Cake Tart3",
+            title:"Cheese Cake Tart3",
             link:cheeseCake3,
             pic:cheeseCake3
         },

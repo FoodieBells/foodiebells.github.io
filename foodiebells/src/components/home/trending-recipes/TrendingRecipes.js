@@ -10,7 +10,7 @@ const imageStyle = {
 class TrendingRecipes extends React.Component {
 	render(){
 		return(
-			<section className="blog-section spad pt-0">
+			<section className="blog-section spad pt-4">
 			<div className="container">
 				<div className="section-title">
 					<h2>the latest & YUMM </h2>
@@ -47,7 +47,7 @@ class TrendingRecipes extends React.Component {
 		return myRecipesData.slice(0,3).map((recipe) => 
 		<div className="blog-post">
 								<div className="row" key={recipe.id}>
-									<div className="col-lg-7">
+									<div className="col-lg-5">
 									<Link to={{ pathname:`/recipe`, data:recipe}}>
 											<img src={recipe.pic} style={imageStyle} alt="blog1" className="blog-post-img img-thumbnail" />
 											</Link>
